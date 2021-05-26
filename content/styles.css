@@ -126,7 +126,7 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 60vw;
+  width: 75vw;
   height: 60vh;
   box-shadow: 10px 10px 10px 3px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
@@ -141,7 +141,7 @@ body {
 .about-text{
   color: var(--text-color-dark);
   height: 33%;
-  line-height: 30px;
+  line-height: 1.25rem;
   padding: 10px 20px;
   text-align: center;
   font-size: .8rem;
@@ -150,7 +150,7 @@ body {
 .about-picture {
   width: 50%;
   height: 100%;
-  background-image: url('images/Forest.png');
+  background-image: url('images/nates.jpg');
   background-size: cover;
   background-position-x: center;
   border-radius: 15px 0 0 15px;
@@ -227,6 +227,11 @@ body {
     transition: 0.2s ease-out;
     transition-property: font-size;
   }
+
+  .about-text {
+    line-height: 1rem;
+    overflow-y: auto;
+  }
 }
 
 /*Small Screen Size*/
@@ -279,5 +284,10 @@ body {
   .bio {
     background-color: white;
     width: 100%;
+  }
+
+  .about-text {
+    line-height: .8 rem;
+    overflow-y: auto;
   }
 }
